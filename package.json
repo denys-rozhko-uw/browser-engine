@@ -1,0 +1,32 @@
+{
+  "name": "browser-engine",
+  "version": "1.0.0",
+  "description": "Custom browser engine written on TypeScript and Skia",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node ./index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denys-rozhko-uw/browser-engine.git"
+  },
+  "keywords": [
+    "browser",
+    "typescript",
+    "engine",
+    "skia",
+    "graphics"
+  ],
+  "author": "denys.rozhko.upwork@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denys-rozhko-uw/browser-engine/issues"
+  },
+  "homepage": "https://github.com/denys-rozhko-uw/browser-engine#readme",
+  "dependencies": {
+    "skia-canvas": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0"
+  }
+}
