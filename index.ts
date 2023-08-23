@@ -1,9 +1,10 @@
-const { Window: SkiaWindow } = require("skia-canvas");
+import { CanvasRenderingContext2D, Window as SkiaWindow } from "skia-canvas";
 
-let win = new SkiaWindow(300, 300);
+const win = new SkiaWindow(300, 300);
 win.title = "Canvas Window";
 win.on("draw", (e) => {
-  let ctx = e.target.canvas.getContext("2d");
+  const ctx = e.target.canvas.getContext("2d") as CanvasRenderingContext2D;
+
   ctx.lineWidth = 25 + 25 * Math.cos(e.frame / 10);
   ctx.beginPath();
   ctx.arc(150, 150, 50, 0, 2 * Math.PI);
